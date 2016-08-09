@@ -34,8 +34,12 @@ public class BattingAvgSlugCalc {
 			}
 		
 			Batters batter = new Batters(playerName, atBats, batterHits);
-			System.out.println(playerName + "\'s batting average is " + batter.getBatAvg());
-			System.out.println(playerName + "\'s slugging percentage is " + batter.getSlugPerc());
+			System.out.print(playerName + "\'s batting average is ");
+			System.out.printf("%.3f", batter.getBatAvg());
+			System.out.println("");
+			System.out.print(playerName + "\'s slugging percentage is ");
+			System.out.printf("%.3f", batter.getSlugPerc());
+			System.out.println("");
 		}	
 	}
 }
